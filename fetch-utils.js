@@ -41,3 +41,9 @@ export async function createNewPost(post) {
         console.error(response.error);
     }
 }
+
+export async function logout() {
+    await client.auth.signOut();
+
+    return (window.location.href = '/');
+}
