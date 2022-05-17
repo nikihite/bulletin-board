@@ -18,6 +18,11 @@ export async function signupUser(email, password) {
     }
 }
 
+export async function signInUser(email, password) {
+    const response = await client.auth.signIn({ email, password });
+    return response.user;
+}
+
 export function getUser() {
     return client.auth.session() && client.auth.session().user;
 }
@@ -25,5 +30,14 @@ export function getUser() {
 export async function redirectIfLoggedIn() {
     if (getUser()) {
         location.replace('./some-other-page');
+    }
+}
+
+export async function createNewPost(post) {
+    const response = await client.from('posts').insert(post);
+    if (response.data) {
+        return response.data;
+    } else {
+        console.error(response.error);
     }
 }
