@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./create.css">
+        <title>Create New Post</title>
+        <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    </head>
+    <button id="logout">Logout</button>
+    <body>
+        <form id="new-post">
+            <label for="zodiac">Your Zodiac</label>
+            <input type="text" name="zodiac" id="zodiac" />
+            <label for="birthdate">Birth date</label>
+            <input type="text" name="birthdate" id="birthdate" />
+            <label for="believe">Do you believe in horoscopes?</label>
+            <input type="text" name="believe" id="believe" />
+            <label for="contact">Your Name</label>
+            <input type="text" name="contact" id="contact" />
+            <button>Submit✨ </button>
+        </form>
+        <script src="./create.js" type="module"></script>
+    </body>
+</html>

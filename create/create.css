@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Rubik+Moonrocks&display=swap');
+body {
+    background-image: url(/assets/purpleblue.jpeg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: lightcoral;
+    margin: 10px;
+}
+
+input {
+    width: 150px;
+    border: 2px solid royalblue;
+}
+
+button {
+    font-family: 'Rubik Moonrocks', cursive;
+    background-color: lightcoral;
+    border-radius: 50px;
+    font-size: 30px;
+    margin: 10px;
+    border: 3px solid black;
+}
+
+input {
+    font-size: 25px;
+    border: 3px solid lightcoral;
+}
+
+button:hover {
+    background-color: royalblue;
+}
