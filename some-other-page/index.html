@@ -8,10 +8,29 @@
         <title>Some Other Page</title>
         <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     </head>
-        <button id="logout">Log Out!</button>
     <body>
-        <h1>Some Other Page!</h1>
-        <a href="/create">Create New Post</a>
+        <main>
+            <section id="sec-one">
+                <h1>Sign Up User</h1>
+                <form id="sign-up">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email-signup" />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password-signup" />
+                    <button>Sign Up</button>
+                </form>
+            </section>
+            <section id="sec-two">
+                <h1>Sign In User</h1>
+                <form id="sign-in">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email-signin" />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password-signin" />
+                    <button>Sign In</button>
+                </form>
+            </section>
+        </main>
         <script src="some-other-page.js" type="module"></script>
     </body>
 </html>

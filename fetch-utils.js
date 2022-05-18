@@ -29,7 +29,7 @@ export function getUser() {
 
 export async function redirectIfLoggedIn() {
     if (getUser()) {
-        location.replace('./some-other-page');
+        location.replace('/some-other-page');
     }
 }
 

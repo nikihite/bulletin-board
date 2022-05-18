@@ -10,35 +10,19 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
     <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-    
     <title>Bulletin Board</title>
 </head>
-
 <body>
+    <header>
+        <div>
+            <button class="hide" id="logout">Logout</button>
+            <button class="hide" id="auth">Sign In / Sign Up</button>
+        </div>
+    </header>
     <main>
-        <section id="sec-one">
-            <h1>Sign Up User</h1>
-            <form id="sign-up">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" />
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" />
-                <button>Sign Up</button>
-            </form>
-        </section>
-        <section id="sec-two">
-            <h1>Sign In User</h1>
-            <form id="sign-in">
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" />
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" />
-                <button>Sign In</button>
-            </form>
-        </section>
+        <h2>Posts</h2>
+            <div class="posts" id="posts"></div>
     </main>
-
     <script type="module" src="./app.js"></script>
 </body>
-
 </html>

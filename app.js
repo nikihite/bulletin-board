@@ -1,31 +1,39 @@
 // import functions and grab DOM elements
-import { signupUser, signInUser, redirectIfLoggedIn } from './fetch-utils.js';
+import { fetchPosts } from '/fetch-utils.js';
+
+const postsElem = document.getElementById('posts');
+
 // let state
-const signupForm = document.getElementById('sign-up');
-const signInForm = document.getElementById('sign-in');
-
-redirectIfLoggedIn();
-
 // set event listeners 
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
-signupForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const data = new FormData(signupForm);
-    console.log({ email: data.get('email'), password: data.get('password') });
-    const user = await signupUser(data.get('email'), data.get('password'));
-    if (user) {
-        location.replace('/some-other-page');
-    }
+
+const logoutBtn = document.getElementById('logout');
+logoutBtn.addEventListener('click', async () => {
+    await logout();
 });
 
-signInForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const data = new FormData(signInForm);
-    console.log({ email: data.get('email'), password: data.get('password') });
-    const user = await signInUser(data.get('email'), data.get('password'));
-    if (user) {
-        location.replace('/some-other-page');
-    }
+const authBtn = document.getElementById('auth');
+authBtn.addEventListener('click', () => {
+    window.location.href = '/some-other-page';
 });
+
+loadData();
+
+async function loadData() {
+    // load up all your posts
+    const posts = await fetchPosts();
+    // const myPost = data[0];
+    // const createdAt = new Date(myPost.created_at);
+    for (let post of posts) {
+        const div = document.createElement('div');
+        const p = document.createElement('p');
+        const h2 = document.createElement('h2');
+        h2.textContent = post.title;
+        p.textContent = post.description;
+        div.append(h2, p);
+        div.classList.add('post');
+        postsElem.append(div);
+    }
+}
