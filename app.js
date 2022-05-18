@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { fetchPosts } from '/fetch-utils.js';
+import { fetchPosts, logout } from './fetch-utils.js';
 
 const postsElem = document.getElementById('posts');
 
@@ -12,14 +12,14 @@ const postsElem = document.getElementById('posts');
 const logoutBtn = document.getElementById('logout');
 logoutBtn.addEventListener('click', async () => {
     await logout();
+    window.location.href = '/some-other-page';
 });
 
 const authBtn = document.getElementById('auth');
 authBtn.addEventListener('click', () => {
-    window.location.href = '/some-other-page';
+    window.location.href = './some-other-page';
 });
 
-loadData();
 
 async function loadData() {
     // load up all your posts
@@ -30,10 +30,12 @@ async function loadData() {
         const div = document.createElement('div');
         const p = document.createElement('p');
         const h2 = document.createElement('h2');
-        h2.textContent = post.title;
-        p.textContent = post.description;
+        h2.textContent = post.zodiac;
+        p.textContent = post.birthdate;
         div.append(h2, p);
         div.classList.add('post');
         postsElem.append(div);
     }
 }
+
+loadData();

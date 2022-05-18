@@ -4,10 +4,19 @@ main {
     align-items: center;
 }
 
+#div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: cursive, lucida handwriting;
+}
+
 body {
     background-image: url('/assets/clouds6.jpeg');
     background-repeat: no-repeat;
     background-size: 2000px 1000px;
+    align-items: center;
 }
 
 h2 {
@@ -21,7 +30,7 @@ label, input {
     border-radius: 50px;
 }
 
-button {
+#logout, #auth {
     font-family: cursive, lucida handwriting;
     background-color: rgb(180, 148, 243);
     font-size: 18px;
@@ -30,4 +39,8 @@ button {
 
 #hide {
     display: none;
+}
+
+a {
+    color: rgb(139, 18, 252);
 }

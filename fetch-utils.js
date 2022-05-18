@@ -36,6 +36,7 @@ export async function redirectIfLoggedIn() {
 export async function createNewPost(post) {
     const response = await client.from('posts').insert(post);
     if (response.data) {
+        location.replace('/');
         return response.data;
     } else {
         console.error(response.error);

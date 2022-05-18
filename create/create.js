@@ -2,7 +2,6 @@ import { createNewPost, checkAuth, logout } from '../fetch-utils.js';
 
 const form = document.getElementById('new-post');
 const logoutBtn = document.getElementById('logout');
-const postsBtn = document.getElementById('postspage');
 
 checkAuth();
 
@@ -21,8 +20,4 @@ form.addEventListener('submit', async (e) => {
 
 logoutBtn.addEventListener('click', async () => {
     await logout();
-});
-
-postsBtn.addEventListener('click', async () => {
-    window.location.href = '/index.html';
 });
