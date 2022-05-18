@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Rubik+Moonrocks&display=swap');
 body {
     background-image: url(/assets/purpleblue.jpeg);
 }
@@ -12,7 +12,7 @@ form {
 label {
     text-align: center;
     font-size: 40px;
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
     color: lightcoral;
     margin: 10px;
 }
@@ -23,7 +23,7 @@ input {
 }
 
 button {
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
     background-color: lightcoral;
     border-radius: 50px;
     font-size: 30px;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Rubik+Moonrocks&display=swap');
 
 
 main {
@@ -11,8 +11,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
 }
 
 body {
@@ -23,18 +22,18 @@ body {
 }
 
 h2 {
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
     font-size: 40px;
 }
 
 label, input {
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
     font-size: 20px;
     border-radius: 50px;
 }
 
 #logout, #auth {
-    font-family: 'Koulen', cursive;;
+    font-family: 'Rubik Moonrocks', cursive;
     background-color:rgb(129, 61, 255);;
     font-size: 22px;
     border-radius: 50px;
@@ -47,7 +46,7 @@ label, input {
 
 a {
     color: rgb(129, 61, 255);
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
     font-size: 30px;
 }
 
@@ -103,12 +102,12 @@ a {
 }
 
 h1 {
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
     font-size: 50px;
     color: rgb(129, 61, 255);
 }
 
 h3, h4, p {
-    font-family: 'Koulen', cursive;
-    font-size: 25px;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 30px;
 }

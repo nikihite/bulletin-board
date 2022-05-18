@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Rubik+Moonrocks&display=swap');
 body {
     background-image: url('/assets/sunset.jpeg');
     background-size: 2000px 1000px;
@@ -9,13 +9,13 @@ body {
 }
 
 h1 {
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
     font-size: 55px;
     text-align: center;
 }
 
 button {
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
     background-color: rgb(180, 148, 243);
     font-size: 28px;
     border-radius: 50px;
@@ -30,7 +30,7 @@ a {
 }
 
 label {
-    font-family: 'Koulen', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
     font-size: 30px;
 }
 
