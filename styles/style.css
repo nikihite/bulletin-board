@@ -37,12 +37,18 @@ label, input {
     border-radius: 50px;
 }
 
-#hide {
+.hide {
     display: none;
 }
 
 a {
     color: rgb(139, 18, 252);
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .post {

@@ -1,5 +1,6 @@
 // import functions and grab DOM elements
 import { fetchPosts, logout } from './fetch-utils.js';
+import { getUser } from './fetch-utils.js';
 
 const postsElem = document.getElementById('posts');
 
@@ -20,6 +21,12 @@ authBtn.addEventListener('click', () => {
     window.location.href = './some-other-page';
 });
 
+const user = getUser();
+if (user) {
+    logoutBtn.classList.remove('hide');
+} else {
+    authBtn.classList.remove('hide');
+}
 
 async function loadData() {
     // load up all your posts
