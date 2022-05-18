@@ -28,11 +28,15 @@ async function loadData() {
     // const createdAt = new Date(myPost.created_at);
     for (let post of posts) {
         const div = document.createElement('div');
-        const p = document.createElement('p');
+        const h3 = document.createElement('h3');
         const h2 = document.createElement('h2');
+        const h4 = document.createElement('h4');
+        const p = document.createElement('p');
         h2.textContent = post.zodiac;
-        p.textContent = post.birthdate;
-        div.append(h2, p);
+        h3.textContent = post.birthdate;
+        h4.textContent = post.believe;
+        p.textContent = post.contact;
+        div.append(h2, h3, h4, p);
         div.classList.add('post');
         postsElem.append(div);
     }

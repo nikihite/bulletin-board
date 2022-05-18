@@ -47,11 +47,11 @@ a {
 
 .post {
     background-color: rgb(172, 138, 238);
-    margin: 10px;
-    width: 15vw;
-    height: 15vw;
-    padding: 10px;
+    margin: 20px;
+    width: 20vw;
+    height: 20vw;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    text-align: center;
 }
 
 .post:nth-child(2n) {
