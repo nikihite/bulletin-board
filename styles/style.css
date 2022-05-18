@@ -105,6 +105,7 @@ h1 {
     font-family: 'Rubik Moonrocks', cursive;
     font-size: 50px;
     color: rgb(129, 61, 255);
+    margin: 0;
 }
 
 h3, h4 {
