@@ -51,6 +51,6 @@ export async function logout() {
 
 export function checkAuth() {
     const user = getUser();
-
-    if (!user) location.replace('/');
+    if (!user) 
+        location.replace('/some-other-page');
 }
