@@ -71,10 +71,10 @@ a {
 
 @media (max-width: 750px) {
     h2 {
-        font-size: 1rem;
+        font-size: .7rem;
     }
     p {
-        font-size: 0.75rem;
+        font-size: 0.5rem;
     }
 
     .post {
@@ -89,7 +89,7 @@ a {
         height: 75vw;
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     p {
         font-size: 1rem;
