@@ -47,3 +47,9 @@ export async function logout() {
 
     return (window.location.href = '/');
 }
+
+export function checkAuth() {
+    const user = getUser();
+
+    if (!user) location.replace('/');
+}

@@ -6,10 +6,11 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(form);
     const newPost = {
-        title: data.get('title'),
-        description: data.get('description'),
-        contact: data.get('contact'),
+        zodiac: data.get('zodiac'),
+        birthdate: data.get('birthdate'),
+        believe: data.get('believe'),
     };
     const resp = await createNewPost(newPost);
     console.log(resp);
 });
+

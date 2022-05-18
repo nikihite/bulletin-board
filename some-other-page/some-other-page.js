@@ -1,4 +1,6 @@
-import { logout } from '../fetch-utils.js';
+import { logout, checkAuth } from '../fetch-utils.js';
+
+checkAuth();
 
 const logoutBtn = document.getElementById('logout');
 
