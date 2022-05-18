@@ -36,8 +36,9 @@ label, input {
 #logout, #auth {
     font-family: 'Koulen', cursive;;
     background-color:rgb(129, 61, 255);;
-    font-size: 18px;
+    font-size: 22px;
     border-radius: 50px;
+    margin: 10px;
 }
 
 .hide {
