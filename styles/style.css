@@ -44,3 +44,43 @@ label, input {
 a {
     color: rgb(139, 18, 252);
 }
+
+.post {
+    background-color: rgb(172, 138, 238);
+    margin: 10px;
+    width: 15vw;
+    height: 15vw;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.post:nth-child(2n) {
+    background-color: rgb(90, 84, 197);
+}
+
+@media (max-width: 750px) {
+    h2 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.75rem;
+    }
+
+    .post {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .post {
+        width: 75vw;
+        height: 75vw;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
