@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&display=swap');
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -9,7 +12,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    font-family: cursive, lucida handwriting;
+    font-family: 'Koulen', cursive;
 }
 
 body {
@@ -20,19 +23,19 @@ body {
 }
 
 h2 {
-    font-family: cursive, lucida handwriting;
-    font-size: 50px;
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
 }
 
 label, input {
-    font-family: cursive, lucida handwriting;
+    font-family: 'Koulen', cursive;
     font-size: 20px;
     border-radius: 50px;
 }
 
 #logout, #auth {
-    font-family: cursive, lucida handwriting;
-    background-color: rgb(180, 148, 243);
+    font-family: 'Koulen', cursive;;
+    background-color:rgb(129, 61, 255);;
     font-size: 18px;
     border-radius: 50px;
 }
@@ -42,7 +45,9 @@ label, input {
 }
 
 a {
-    color: rgb(139, 18, 252);
+    color: rgb(129, 61, 255);
+    font-family: 'Koulen', cursive;
+    font-size: 30px;
 }
 
 .posts {
@@ -53,7 +58,7 @@ a {
 
 .post {
     background-color: rgb(172, 138, 238);
-    margin: 20px;
+    margin: 13px;
     width: 20vw;
     height: 20vw;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
@@ -89,4 +94,20 @@ a {
     p {
         font-size: 1rem;
     }
+}
+
+#createnew {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Koulen', cursive;
+    font-size: 50px;
+    color: rgb(129, 61, 255);
+}
+
+h3, h4, p {
+    font-family: 'Koulen', cursive;
+    font-size: 24px;
 }
